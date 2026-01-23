@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Языковые курсы</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles_records.css">
+</head>
+<body>
+	<div class="container">
+		<div class="panel">
+			<p>Оформление заказа</p>
+		</div>
+		<form id="form" action="">
+			<div>
+				<label for="name">Как к вам обращаться:</label>
+				<input type="text" id="name" placeholder="Ваше имя" name="name" required>
+			</div>
+			<div>
+				<label for="ad">Напишите адрес для доставки:</label>
+				<input type="text" id="ad" placeholder="Ваш адрес" name="ad" required>
+			</div>
+			<div>
+				<label for="number">Ваш номер телефона:</label>
+				<input type="number" id="number" placeholder="Ваш номер телефона" name="number" required>
+			</div>
+			<div>
+				<label for="st">Кол-во столовых приборов:</label>
+				<input type="number" id="st" placeholder="Сколько ложек и вилок" name="st">
+			</div>
+			<div>
+				<label for="native">Выберите допы:</label>
+				<select name="native">
+					<option value="">Выберите допы</option>
+					<option value="em">без допов</option>
+					<option value="ss">сырный соус</option>
+					<option value="ssss">2 сырных соуса</option>
+					<option value="os">острый соус</option>
+				</select>
+			</div>
+			<div>
+				<label for="time">К скольки привести доставку:</label>
+				<input type="time" id="time" placeholder="Время доставки" name="time" required>
+			</div>
+			<div>
+				<input type="checkbox" id="door" name="door" checked>
+				<label for="door">Оставить у двери</label>
+			</div>
+			<div>
+				<label for="sub">Заказать:</label>
+				<input type="submit" id="sub" placeholder="Заказать" name="sub">
+			</div>
+		</form>
+	</div>
+	<img src="kfc.jpg" alt="kfc">
+	<div class="records-container">
+		<h2>Предыдущие заказы</h2>
+		<div id="records-list"></div>
+		<script src="script.js"></script>
+	</div>
+
+</body>
+</html>
